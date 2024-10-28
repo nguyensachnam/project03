@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 14px;
+    border-color: transparent;
+    background: #1ebfc1;
+    width: 186px;
+    height: 68px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    max-width: (100%-48px);
+}
+
+/* Header */
+.header.fixed {
+    position: sticky;
+    top: -30px;
+    z-index: 1;
+}
+
+.header {
+    background: #fff;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+}
+
+.header .home-select {
+    margin-left: auto;
+    margin: 0 177px 0 235px;
+}
+
+.home-select ul {
+    display: flex;
+    gap: 39px;
+}
+
+.account-btn .btn-signin,
+.home-select ul a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.home-select ul a.active {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.header .body .btn-signup {
+    display: inline-block;
+    margin-left: 24px;
+    width: 108px;
+    height: 48px;
+    flex-shrink: 0;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hero {
+    margin-top: 42px;
+}
+
+.hero .body {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.hero .hero-left {
+    margin-top: 93px;
+}
+
+.hero .hero-left .sub-heading {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .hero-left .heading {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero .hero-left .desc {
+    width: 374px;
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.hero .hero-left .cta-hero {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-left .btn-right {
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    background: none;
+    border-color: transparent;
+}
