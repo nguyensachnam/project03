@@ -185,6 +185,9 @@ a {
 }
 
 .hero .hero-left .btn-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 62px;
     height: 62px;
     margin-left: 50px;
@@ -192,6 +195,10 @@ a {
     border-radius: 999px;
     border-color: transparent;
     box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-left .btn-right:hover {
+    border-color: var(--primary-color);
 }
 
 .hero .hero-right {
